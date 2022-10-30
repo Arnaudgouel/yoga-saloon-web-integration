@@ -21,18 +21,20 @@
     </nav>
     <h1>Yogasaloon</h1>
     <h4>Votre salon de yoga détente et apéro rigolo</h4>
-    <a href="#">Découvrir</a>
+    <a href="#" class="btn shadow">Découvrir</a>
   </header>
   <main>
-    <section>
-      <h2>Le concept Yogasaloon</h2>
+    <section id="section1">
+      <h2>Le concept <span>Yogasaloon</span></h2>
       <article>
         <ul>
           <li>
             <h3>Profitez d'une séance de yoga vinyasa d'1h</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt ducimus possimus quas ipsam quasi magnam odio amet dolore, iure et deleniti non aut culpa id praesentium velit beatae ratione!</p>
           </li>
-          <li></li>
+          <li class="btn shadow icon-img">
+            <img src="img/mat@2x.png" alt="mat">
+          </li>
         </ul>
       </article>
       <article>
@@ -41,7 +43,9 @@
             <h3>Détendez vous après la séance en choisissant votre boisson parmis un large choix</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt ducimus possimus quas ipsam quasi magnam odio amet dolore, iure et deleniti non aut culpa id praesentium velit beatae ratione!</p>
           </li>
-          <li></li>
+          <li class="btn shadow icon-img">
+            <img src="img/drink-list@2x.png" alt="mat">
+          </li>
         </ul>
       </article>
       <article>
@@ -50,46 +54,60 @@
             <h3>Dégustez votre boisson avec des accompagnements healthy faits maison</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum incidunt ducimus possimus quas ipsam quasi magnam odio amet dolore, iure et deleniti non aut culpa id praesentium velit beatae ratione!</p>
           </li>
-          <li></li>
+          <li class="btn shadow icon-img">
+            <img src="img/drink@2x.png" alt="mat">
+          </li>
         </ul>
       </article>
     </section>
-    <section>
-      <h2>Les cours Yogasaloon</h2>
+    <section id="section2">
+      <h2>Les cours <span>Yogasaloon</span></h2>
       <ul>
-        <li><img src="img/yoga.jpg" alt="yoga"></li>
+        <li class="img"><img class="shadow" src="img/yoga.jpg" alt="yoga"></li>
         <li>
           <h3>Du vinyasa en veux tu en voilà</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quaerat, ipsum ea, eos molestias porro rem culpa cumque consectetur cum optio obcaecati suscipit dolores ratione odio. Possimus sed voluptatem incidunt!</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section id="section3">
       <h2>Contact - Suivre un cours</h2>
-      <article>
-        <form action="GET">
+      <form action="GET">
+        <article>
           <p>Être rappelé:</p>
           <ul>
             <li>
               <input type="radio" name="called" id="today">
-              <label for="today">Aujourd'hui</label>
+              <label for="today" class="btn shadow">Aujourd'hui</label>
             </li>
             <li>
               <input type="radio" name="called" id="tomorrow">
-              <label for="tomorrow">Demain</label>
+              <label for="tomorrow" class="btn shadow">Demain</label>
             </li>
             <li>
               <input type="radio" name="called" id="soon">
-              <label for="soon">Plus tard</label>
+              <label for="soon" class="btn shadow">Plus tard</label>
             </li>
           </ul>
+        </article>
+        <article>
           <input type="text" name="name" id="name" placeholder="Nom prénom">
+        </article>
+        <article>
           <input type="email" name="email" id="email" placeholder="Email">
-          Vous êtes intéressés par:
-        </form>
-      </article>
+        </article>
+        <article>
+          <label for="select-interest">Vous êtes intéressés par:</label>
+          <select name="interets" id="select-interest">
+            <option value="vinyasa">Yoga Vinyasa</option>
+          </select>
+        </article>
+        <button class="btn shadow">Envoyer</button>
+      </form>
     </section>
-
+    <footer>
+      2019 © AH
+    </footer>
   </main>
 </body>
 </html>
